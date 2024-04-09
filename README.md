@@ -9,6 +9,7 @@ Support dice types: d2, d3, d4, d6, d8, d10, d12, d20, and d100.
 Handle basic arithmetic operations: addition (+), subtraction (-), and multiplication (*) between dice rolls and constants.
 Output should list every dice roll and the result of the expression.
 Examples:
+
 Input: 2d6
 Output:
 Rolls: 4, 6
@@ -37,7 +38,8 @@ Input: 2d13
 Output: ERROR MESSAGE
 
 
-Optional features teams should implement as many of these as possible; however, all features should work together. Teams should carefully consider the schema for each feature and how they combine with different features.
+Optional features;
+teams should implement as many of these as possible; All features should work together. Teams should carefully consider the schema for each feature and how they combine with different features.
 
 Roll history
 * Allow for repeating of previous rolls
@@ -60,10 +62,12 @@ Target Number/dice pool
  * Works with d4, d6, d8, and d10.
  * Rolls a specified number of dice against a target number.
  * For instance, rolling 6d6 against a target of 5 yields results of 1, 2, 3, 4, 5, and 6, with a final result of 2.
+ * 
 Opposed rolls
  * Works on d20, d100, 2d10, 3d6
  * Two rolls, attacker vs. defender result returns which result is highest
- * Attack rolls with critical hits
+   
+Attack rolls with critical hits
  * Allows for D&D-style attack rolls with critical hits.
  * Supports attack rolls on d20 and d100.
  * Damage rolls can include one or more dice types: d3, d4, d6, d8, d10, and d12s.
