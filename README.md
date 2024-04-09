@@ -35,6 +35,8 @@ Result: 24
 
 Input: 2d13
 Output: ERROR MESSAGE
+
+
 Optional features teams should implement as many of these as possible; however, all features should work together. Teams should carefully consider the schema for each feature and how they combine with different features.
 Roll history
 Allow for repeating of previous rolls
