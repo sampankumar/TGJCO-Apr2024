@@ -1,3 +1,3 @@
-Write details of what you have done for the judges consideration here. 
+Write details of what you have done for the judge's consideration here. 
 
-This inculcating what features you have implemented, how they work, and why you think you should win.
+This should include what features you have implemented, how they work, and why you think you should win.
