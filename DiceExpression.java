@@ -30,11 +30,15 @@ public class DiceExpression {
         int timesDiceRolled=0;
         int diceNumbered=0;
         int rollout=0;
-        if (diceRoll.length!= 2) {
+        if (diceRoll.length== 1) {
             timesDiceRolled=1;
+            diceNumbered = Integer.valueOf(diceRoll[0]);
+
         }
-        timesDiceRolled=Integer.valueOf(diceRoll[0]);
-        diceNumbered=Integer.valueOf(diceRoll[1]);
+        else {
+            timesDiceRolled = Integer.valueOf(diceRoll[0]);
+            diceNumbered = Integer.valueOf(diceRoll[1]);
+        }
 
         if (timesDiceRolled <= 0 || diceNumbered <= 0) {
             System.out.println("Invalid input. Both the number of dice and the number of sides must be positive integers.");
@@ -49,7 +53,7 @@ public class DiceExpression {
         }
         else
         {
-            System.out.println("Invalid input format. Please use the format 'NdM', where N is the number of dice and M is the number of sides.");
+            System.out.println("Its INVALID Dice Number.");
             return 0;
         }
         return rollout;
