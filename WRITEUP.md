@@ -1,3 +1,2 @@
-Write details of what you have done for the judge's consideration here. 
-
-This should include what features you have implemented, how they work, and why you think you should win.
+[12:59] Kwame Nyantakyi
+Our program supports basic arithmetic operations (addition, subtraction, multiplication) and rolling virtual dice with customizable sides. Each functionality is handled by separate classes: DiceRoll for rolling dice, DiceOperations for math operations, DiceExpressions for combining rolls and operations, and Features for additional functionalities. With self-explanatory class and method names, our code is easy to understand and maintain. Unit tests ensure each functionality works as intended.
