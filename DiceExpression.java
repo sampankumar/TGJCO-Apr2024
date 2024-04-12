@@ -5,7 +5,9 @@ import java.util.Set;
 public class DiceExpression {
     private String expression;
 
-    private Set<Integer> validDiceSet=new HashSet<>(Arrays.asList(2,3, 4, 6, 8, 10, 12, 20, 100));;
+    private Set<Integer> validDiceSet=new HashSet<>(Arrays.asList(2,3, 4, 6, 8, 10, 12, 20, 100));
+
+    private Set<Character> validOp=new HashSet<>(Arrays.asList('+','-','*'));
 
     public DiceExpression(String expression) {
         this.expression = expression.trim(); // Trim the input string
@@ -13,7 +15,16 @@ public class DiceExpression {
 
     public void evaluate() {
 
+        for(Character ch:expression.toCharArray())
+        {
+            if(validOp.contains(ch))
+            {
+               // String chlist+=ch;
+            }
+        }
+
         String[] expressionParts = expression.split("[+\\-*]");
+
 
         float res = 0;
         for (int i = 0; i < expressionParts.length; i++) {
